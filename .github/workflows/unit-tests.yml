@@ -1,10 +1,9 @@
-name: Tests
-
+name: Run Tests and build
 on: push
 
 jobs:
   run_tests:
-    name: Run tests
+    name: Run tests and build
     runs-on: ubuntu-latest
     env: 
       DOTNET_VERSION: 6.0.x
@@ -19,3 +18,5 @@ jobs:
           cache: 'yarn'
       - name: Run unit tests
         run: yarn test
+      - name: Build
+        run: dotnet build src
