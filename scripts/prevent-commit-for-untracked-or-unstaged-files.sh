@@ -13,6 +13,6 @@ fi
 num_untracked_cs_files=$(git ls-files --others --exclude-standard | grep -c *.cs)
 if [ $num_untracked_cs_files -gt 0 ];
 then 
-    echo "Unstaged .cs files found - stage or stash them."
+    echo "Untracked .cs files found - stage or stash them."
     exit 2
 fi
