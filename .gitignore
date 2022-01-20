@@ -452,3 +452,55 @@ $RECYCLE.BIN/
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+.idea/
+
+# Coverage directory used by tools like istanbul
+coverage
+.nyc_output
+
+# node-waf configuration
+.lock-wscript
+
+# Dependency directory
+node_modules
+
+# generated folders/files
+build
+dist
+site
+.awcache
+
+# Optional npm cache directory
+.npm
+
+.idea
+
+# allow folks to add things to the debug /launch and /serve folder, but don't include them in git
+debug/launch/*
+!debug/launch/main.ts
+!debug/launch/sp.ts
+!debug/launch/graph.ts
+!debug/launch/tsconfig.json
+!debug/launch/setup.ts
+
+debug/serve/*
+!debug/serve/main.ts
+!debug/serve/tsconfig.json
+!debug/serve/plumbing
+
+# project settings
+settings.js
+
+# don't save the locally produced .js of the buildsystem config
+buildsystem-config.js
